@@ -31,19 +31,19 @@ const JerseyShop = () => {
 
   const screenshots = [
     {
-      src: "https://images.unsplash.com/photo-1607082349566-187342175e2d?auto=format&fit=crop&w=800&q=80",
+      src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751229615/Screenshot_1_psygsw.png",
       title: "Home Screen",
       desc: "Browse featured collections",
     },
     {
-      src: "https://images.unsplash.com/photo-1607083200312-4e3a76a5e339?auto=format&fit=crop&w=800&q=80",
-      title: "Product View",
-      desc: "Detailed jersey information",
+        src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751288875/JerseyShop-2_djzbtt.png",
+        title: "Shopping Cart",
+        desc: "Easy checkout process",
     },
     {
-      src: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=800&q=80",
-      title: "Shopping Cart",
-      desc: "Easy checkout process",
+      src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751288875/JerseyShop-3_hkwj4o.png",
+      title: "Product View",
+      desc: "Interactive admin dashboard",
     },
   ];
 
@@ -182,14 +182,16 @@ const JerseyShop = () => {
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#"
+              href="https://github.com/partho-31/Jershop-client"
+               target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-700 text-white font-medium rounded-full hover:shadow-lg transition-all"
             >
               <FaGithub className="mr-2" />
               View Source Code
             </a>
             <a
-              href="#"
+              href="https://jershop-client.vercel.app/"
+              target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white font-medium rounded-full hover:shadow-lg transition-all"
             >
               <FaEye className="mr-2" />

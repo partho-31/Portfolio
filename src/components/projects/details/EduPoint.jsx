@@ -29,18 +29,18 @@ const EduPoint = () => {
 
   const screenshots = [
     {
-      src: "https://images.unsplash.com/photo-1584697964403-bcc68f8fdd13?auto=format&fit=crop&w=800&q=80",
+      src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751229614/Screenshot_2_o9mlep.png",
       title: "Landing Page",
       desc: "Welcoming UI with clear CTA",
     },
     {
-      src: "https://images.unsplash.com/photo-1584697964230-dde78ba0063c?auto=format&fit=crop&w=800&q=80",
-      title: "Tutor Dashboard",
-      desc: "Tutor management and scheduling",
+      src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751289681/Mentor_ez8wgm.png",
+      title: "Mentors Profile",
+      desc: "Mentors Profile ",
     },
     {
-      src: "https://images.unsplash.com/photo-1584697964356-6944460b44f0?auto=format&fit=crop&w=800&q=80",
-      title: "Student Interface",
+      src: "https://res.cloudinary.com/dinzf10l3/image/upload/v1751289682/Course_sa1bln.png",
+      title: "Course Details",
       desc: "Course discovery and requests",
     },
   ];
@@ -173,14 +173,16 @@ const EduPoint = () => {
           </h2>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="#"
+              href="https://github.com/partho-31/Tutor-client"
+              target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-gray-800 to-gray-700 text-white font-medium rounded-full hover:shadow-lg transition-all"
             >
               <FaGithub className="mr-2" />
               View Source Code
             </a>
             <a
-              href="#"
+              href="https://tutor-client-chi.vercel.app/"
+              target="_blank"
               className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-indigo-600 to-purple-500 text-white font-medium rounded-full hover:shadow-lg transition-all"
             >
               <FaEye className="mr-2" />

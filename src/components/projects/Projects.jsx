@@ -1,4 +1,5 @@
 import { FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router";
 
 const projects = [
   {
@@ -29,6 +30,8 @@ const Projects = ({projectsRef}) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {projects.map((project, index) => (
+            
+            <Link to={`projects/${index+1}`} >
             <div
               key={index}
               className="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
@@ -65,7 +68,7 @@ const Projects = ({projectsRef}) => {
                   </button>
                 </div>
               </div>
-            </div>
+            </div></Link>
           ))}
         </div>
 
