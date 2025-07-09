@@ -142,7 +142,7 @@ function Navbar({
           component="nav"
           position="static"
           sx={{
-            backgroundColor: "rgba(219, 234, 254, 1)",
+            backgroundColor: "rgba(275, 275, 275, 0)",
             color: "black",
             boxShadow: "0 2px 10px rgba(0,0,0,0)",
             pt: 2,

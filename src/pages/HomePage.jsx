@@ -15,7 +15,7 @@ const HomePage = () => {
     contactRef,
   } = useOutletContext();
   return (
-    <div className=" bg-blue-100">
+    <div className="">
       <HeroSection contactRef={contactRef} />
       <AboutSection aboutRef={aboutRef} />
       <EducationSection educationRef={educationRef} />
