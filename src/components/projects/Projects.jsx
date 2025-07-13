@@ -20,62 +20,62 @@ const projects = [
   },
 ];
 
-const Projects = ({projectsRef}) => {
+const Projects = ({ projectsRef }) => {
   return (
-    <section ref={projectsRef} className="py-20 bg-">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-16">
+    <section
+      ref={projectsRef}
+      className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:my-12 p-0 sm:p-8 md:p-10 rounded-2xl bg-transparent "
+    >
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-14">
           Featured <span className="text-blue-600">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
           {projects.map((project, index) => (
-            
-            <Link to={`projects/${index+1}`} >
-            <div
-              key={index}
-              className="group bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300"
-            >
-              <div className="aspect-[3/2] overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-800 mb-3 group-hover:text-blue-600 transition-colors duration-200">
-                  {project.title}
-                </h3>
-                <p className="text-gray-600 mb-5 leading-relaxed text-sm">
-                  {project.description}
-                </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex flex-wrap gap-3">
-                    {project.tech.map((tech, idx) => (
-                      <div
-                        key={idx}
-                        className="bg-blue-100 px-3 py-0 rounded-full transition-all hover:bg-blue-100 hover:shadow-sm "
-                      >
-                        <span className="text-blue-500 font-medium text-sm md:text-base">
-                          {tech}
-                        </span>
-                      </div>
-                    ))}
+            <Link to={`projects/${index + 1}`} key={index}>
+              <div className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-[3/3] sm:aspect-[3/2] overflow-hidden">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-5 sm:p-6">
+                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-blue-600">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-400 mb-4 leading-relaxed overflow-hidden line-clamp-2 text-sm sm:text-base">
+                    {project.description}
+                  </p>
+                  <div className="flex justify-between items-center">
+                    <div className="flex flex-wrap gap-2 sm:gap-3">
+                      {project.tech.map((tech, idx) => (
+                        <div
+                          key={idx}
+                          className="px-3 py-0.5 rounded-full transition-all border border-gray-400"
+                        >
+                          <span className="text-blue-500 font-medium text-xs sm:text-sm">
+                            {tech}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                    <button className="text-blue-400 hover:text-blue-600 transition-colors">
+                      <FaExternalLinkAlt size={18} />
+                    </button>
                   </div>
-                  <button className="text-blue-400 hover:text-blue-600 transition-colors">
-                    <FaExternalLinkAlt size={20} className="text-base" />
-                  </button>
                 </div>
               </div>
-            </div></Link>
+            </Link>
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-10 sm:mt-12">
           <a
             href="#"
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium group"
+            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium group text-sm sm:text-base"
           >
             View All Projects
             <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
