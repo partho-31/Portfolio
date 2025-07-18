@@ -7,7 +7,7 @@ const projects = [
     description:
       "An online store built using Django REST, React and PostgreSQL with full cart system, order management and secure email verification.",
     image:
-      "https://res.cloudinary.com/dinzf10l3/image/upload/v1751229615/Screenshot_1_psygsw.png",
+      "https://res.cloudinary.com/dinzf10l3/image/upload/v1752836021/Golazo_home_qszfol.png",
     tech: ["React", "Django", "PostgreSQL"],
   },
   {
@@ -15,7 +15,7 @@ const projects = [
     description:
       "A tutoring platform with role-based login for students and tutors. Built with Django REST, React and PostgreSQL. Includes secure email verification.",
     image:
-      "https://res.cloudinary.com/dinzf10l3/image/upload/v1751229615/Screenshot_3_yfxvvu.png",
+      "https://res.cloudinary.com/dinzf10l3/image/upload/v1752836544/Screenshot_9_oxjslr.png",
     tech: ["React", "Django", "PostgreSQL"],
   },
 ];
@@ -24,18 +24,18 @@ const Projects = ({ projectsRef }) => {
   return (
     <section
       ref={projectsRef}
-      className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:my-12 p-0 sm:p-8 md:p-10 rounded-2xl bg-transparent "
+      className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:my-48 p-0 sm:p-8 md:p-10 rounded-2xl bg-transparent "
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-14">
           Featured <span className="text-blue-600">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-20">
           {projects.map((project, index) => (
             <Link to={`projects/${index + 1}`} key={index}>
-              <div className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-[3/3] sm:aspect-[3/2] overflow-hidden">
+              <div data-aos={index== 0? "fade-right" : "fade-left"} className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+                <div className="aspect-[3/3] sm:aspect-[2/1] overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}

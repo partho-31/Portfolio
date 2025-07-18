@@ -5,17 +5,22 @@ import TechStack from "../components/skill/TechStack";
 import Projects from "../components/projects/Projects";
 import Contact from "../components/contact/Contact";
 import { useOutletContext } from "react-router";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const HomePage = () => {
-  const {
-    aboutRef,
-    educationRef,
-    techStackRef,
-    projectsRef,
-    contactRef,
-  } = useOutletContext();
+  useEffect(() => {
+    AOS.init({
+      duration: 1500,
+      once: false,
+    });
+  }, []);
+
+  const { aboutRef, educationRef, techStackRef, projectsRef, contactRef } = useOutletContext();
   return (
-    <div className="">
+    <div>
+      
       <HeroSection contactRef={contactRef} />
       <AboutSection aboutRef={aboutRef} />
       <EducationSection educationRef={educationRef} />

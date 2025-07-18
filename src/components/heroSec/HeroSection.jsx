@@ -1,14 +1,13 @@
 import { FaDownload, FaPaperPlane } from "react-icons/fa";
-import AnimatedCubeBackground from "../background/AnimatedCubBackground";
+// import AnimatedCubeBackground from "../background/AnimatedCubBackground";
 
 const HeroSection = ({ contactRef }) => {
   return (
-    <section className="py-20  text-white min-h-screen overflow-x-hidden">
-      <AnimatedCubeBackground />
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center relative z-10">
+    <section className="sm:py-20 py-10 text-white min-h-screen overflow-x-hidden">
+      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="md:w-1/2 mb-12 md:mb-0">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-200 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl mt-5 font-bold text-gray-200 mb-4 leading-tight">
             Hi, I'm <span className="text-blue-500">Partho</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-blue-500 mb-6 font-medium">
@@ -20,18 +19,20 @@ const HeroSection = ({ contactRef }) => {
             ideas to life with React and Django REST — building scalable
             solutions that are both elegant and practical.
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center sm:justify-start gap-4">
             <button
               onClick={() =>
                 contactRef.current.scrollIntoView({ behavior: "smooth" })
               }
-              className="flex items-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-6  sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+              className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto"
             >
               <FaPaperPlane /> Contact Me
             </button>
+
             <a
-              href="#"
-              className="flex items-center gap-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
+              href="https://drive.google.com/file/d/1se9kXwOPVoEPgz5aVpEGOc5IF7aVXBTS/view?usp=sharing"
+              target="_blank"
+              className="flex items-center justify-center gap-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto"
             >
               <FaDownload /> Download CV
             </a>
