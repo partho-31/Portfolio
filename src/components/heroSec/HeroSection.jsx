@@ -28,9 +28,8 @@ const HeroSection = ({ contactRef }) => {
             >
               <FaPaperPlane /> Contact Me
             </button>
-
             <a
-              href="https://drive.google.com/file/d/1se9kXwOPVoEPgz5aVpEGOc5IF7aVXBTS/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pXsgK6f-IqAm1c1-vXIAeX9BhWtlRkT1/view?usp=sharing"
               target="_blank"
               className="flex items-center justify-center gap-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto"
             >

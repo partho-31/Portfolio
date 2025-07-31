@@ -73,13 +73,13 @@ const Projects = ({ projectsRef }) => {
         </div>
 
         <div className="text-center mt-10 sm:mt-12">
-          <a
-            href="#"
+          <div
+            
             className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium group text-sm sm:text-base"
           >
-            View All Projects
+            Click To View Projects
             <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-          </a>
+          </div>
         </div>
       </div>
     </section>
