@@ -1,8 +1,11 @@
+import { useEffect } from "react";
+
 import { FaGithub, FaEye } from "react-icons/fa";
 import { HiOutlineBookOpen, HiLightningBolt } from "react-icons/hi";
 import { BsCheckLg } from "react-icons/bs";
 import Nav from "./Nav";
 import AnimatedCubeBackground from "../../background/AnimatedCubBackground";
+import ScrollToTop from "../../../layouts/ScrollToTop"
 
 const EduPoint = () => {
   const features = [
@@ -46,7 +49,11 @@ const EduPoint = () => {
       desc: "Interactive admin dashboard ",
     },
   ];
-
+  
+ useEffect(() => {
+    window.scrollTo(0, 0);
+  })
+  
   return (
     <div>
       <AnimatedCubeBackground />
@@ -197,6 +204,7 @@ const EduPoint = () => {
           </div>
         </div>
       </div>
+      <ScrollToTop/>
     </div>
   );
 };

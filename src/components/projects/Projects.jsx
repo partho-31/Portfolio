@@ -23,8 +23,9 @@ const projects = [
 const Projects = ({ projectsRef }) => {
   return (
     <section
+      data-aos="zoom-in"
       ref={projectsRef}
-      className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:my-48 p-0 sm:p-8 md:p-10 rounded-2xl bg-transparent "
+      className="mx-4 sm:mx-6  sm:my-56  md:mx-10 lg:mx-16 my-10 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-14">
@@ -34,7 +35,7 @@ const Projects = ({ projectsRef }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-20">
           {projects.map((project, index) => (
             <Link to={`projects/${index + 1}`} key={index}>
-              <div data-aos={index== 0? "fade-right" : "fade-left"} className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
+              <div className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-[3/3] sm:aspect-[2/1] overflow-hidden">
                   <img
                     src={project.image}
@@ -73,10 +74,7 @@ const Projects = ({ projectsRef }) => {
         </div>
 
         <div className="text-center mt-10 sm:mt-12">
-          <div
-            
-            className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium group text-sm sm:text-base"
-          >
+          <div className="inline-flex items-center text-blue-600 hover:text-blue-800 font-medium group text-sm sm:text-base">
             Click To View Projects
             <FaArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
           </div>

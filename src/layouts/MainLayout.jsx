@@ -3,6 +3,7 @@ import { Outlet } from "react-router";
 import Footer from "./Footer";
 import { useRef } from "react";
 import ScrollToTop from "./ScrollToTop";
+// eslint-disable-next-line no-unused-vars
 import { motion, useScroll } from "framer-motion";
 import AnimatedCubeBackground from "../components/background/AnimatedCubBackground";
 
@@ -19,7 +20,7 @@ const MainLayout = () => {
   const { scrollYProgress } = useScroll();
   return (
     <>
-          <AnimatedCubeBackground />
+      <AnimatedCubeBackground />
 
       <Navbar
         onContactClick={() => scrollToSection(contactRef)}

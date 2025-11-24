@@ -10,8 +10,7 @@ const EducationSection = ({ educationRef }) => {
     },
     {
       degree: "Higher Secondary (12th Grade)",
-      institution:
-        "Masundia Bhawanipur K.J.B Degree College • 2018-2020",
+      institution: "Masundia Bhawanipur K.J.B Degree College • 2018-2020",
       description:
         "Completed Science stream with a strong focus on Mathematics and Physics. Achieved a GPA of 5.00/5.00",
       icon: "📚",
@@ -20,7 +19,7 @@ const EducationSection = ({ educationRef }) => {
 
   return (
     <section
-    data-aos="fade-right"
+      data-aos="fade-right"
       ref={educationRef}
       className="mx-4 sm:mx-6 md:mx-10 lg:mx-16  sm:my-56 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >

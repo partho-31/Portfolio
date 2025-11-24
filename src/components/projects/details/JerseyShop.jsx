@@ -5,6 +5,7 @@ import { BsCheckLg } from "react-icons/bs";
 import { FaProjectDiagram } from "react-icons/fa";
 import Nav from "./Nav";
 import AnimatedCubeBackground from "../../background/AnimatedCubBackground";
+import { useEffect } from "react";
 
 const JerseyShop = () => {
   const features = [
@@ -48,6 +49,11 @@ const JerseyShop = () => {
       desc: "Easy checkout process",
     },
   ];
+
+  useEffect(() => {
+      window.scrollTo(0, 0);
+    })
+    
 
   return (
     <div>

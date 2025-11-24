@@ -5,8 +5,7 @@ const AboutSection = ({ aboutRef }) => {
     <section
       data-aos="zoom-in"
       ref={aboutRef}
-      id="about"
-      className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
+      className="mx-4 sm:mx-6   md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-12 md:mb-14">
@@ -40,10 +39,10 @@ const AboutSection = ({ aboutRef }) => {
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
                 I'm confident in backend development with Python, especially
                 Django and Django REST Framework. On the frontend, I work with
-                React and Tailwind CSS to create clean and responsive UI. I'm
-                also experienced with JWT-based authentication, Swagger API
-                documentation, PostgreSQL database and tools like Supabase and
-                Cloudinary.
+                React.js/Next.js and Tailwind CSS to create clean and responsive
+                UI. I'm also experienced with JWT-based authentication, Swagger
+                API documentation, PostgreSQL database and tools like Supabase
+                and Cloudinary.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
                 As a Physics undergraduate, I apply analytical thinking to solve
@@ -54,7 +53,7 @@ const AboutSection = ({ aboutRef }) => {
             </div>
 
             {/* Skills Tags */}
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2">
               {skills.map((skill, index) => (
                 <div
                   key={index}

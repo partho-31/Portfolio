@@ -1,13 +1,12 @@
 import { FaDownload, FaPaperPlane } from "react-icons/fa";
-// import AnimatedCubeBackground from "../background/AnimatedCubBackground";
 
 const HeroSection = ({ contactRef }) => {
   return (
-    <section className="sm:py-20 py-10 text-white min-h-screen overflow-x-hidden">
+    <section className="sm:py-20 py-10 w-full text-white  overflow-x-hidden">
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center relative z-10">
         {/* Text Content */}
-        <div className="md:w-1/2 mb-12 md:mb-0">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl mt-5 font-bold text-gray-200 mb-4 leading-tight">
+        <div className="md:w-1/2 sm:mx-5 mb-12 md:mb-0">
+          <h1 className="text-4xl md:text-5xl  lg:text-6xl mt-5 font-bold text-gray-200 mb-4 leading-tight">
             Hi, I'm <span className="text-blue-500">Partho</span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-blue-500 mb-6 font-medium">
@@ -16,8 +15,8 @@ const HeroSection = ({ contactRef }) => {
           <p className="text-gray-400 mb-8 text-lg max-w-lg">
             I craft clean, functional, and user-focused web experiences using
             modern technologies. As a passionate full stack developer, I bring
-            ideas to life with React and Django REST — building scalable
-            solutions that are both elegant and practical.
+            ideas to life with React.js/Next.js and Django REST — building
+            scalable solutions that are both elegant and practical.
           </p>
           <div className="flex flex-wrap justify-center sm:justify-start gap-4">
             <button
