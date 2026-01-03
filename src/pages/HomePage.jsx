@@ -17,11 +17,11 @@ const HomePage = () => {
     });
   }, []);
 
-  const { aboutRef, educationRef, techStackRef, projectsRef, contactRef } =
+  const { aboutRef, educationRef, techStackRef, projectsRef, contactRef , heroSecRef } =
     useOutletContext();
   return (
-    <div>
-      <HeroSection contactRef={contactRef} />
+    <div className="bg-base-100">
+      <HeroSection contactRef={contactRef} heroSecRef={heroSecRef} />
       <AboutSection aboutRef={aboutRef} />
       <EducationSection educationRef={educationRef} />
       <TechStack techStackRef={techStackRef} />

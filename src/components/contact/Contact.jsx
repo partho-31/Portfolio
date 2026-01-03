@@ -42,7 +42,7 @@ const Contact = ({ contactRef }) => {
 
   return (
     <section 
-      ref={contactRef} className="mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:mb-20">
+      ref={contactRef} className="scroll-mt-24 mx-4 sm:mx-6 md:mx-10 lg:mx-16 my-10 sm:mb-20">
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-200 mb-4 text-center">
         Contact <span className="text-blue-500">Us</span>
       </h2>

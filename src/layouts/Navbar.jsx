@@ -1,4 +1,5 @@
 const Navbar = ({
+  onHeroSecClick,
   onAboutClick,
   onEducationClick,
   onTechStackClick,
@@ -6,7 +7,7 @@ const Navbar = ({
   onContactClick,
 }) => {
   return (
-    <div className="navbar w-screen sm:px-10 sticky top-0 z-20 bg-base-100 shadow-sm">
+    <div className="navbar w-screen sm:px-10 sticky top-0 z-20 bg-base-100 shadow-md">
       {/* LEFT SIDE (hamburger + name on lg hidden) */}
       <div className="flex flex-1 items-center">
         {/* Hamburger for small screens */}
@@ -32,16 +33,16 @@ const Navbar = ({
             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
           >
             <li>
-              <button>Home</button>
+              <button onClick={onHeroSecClick}>Home</button>
             </li>
             <li>
               <button onClick={onEducationClick}>Educations</button>
             </li>
             <li>
-              <button onClick={onProjectClick}>Projects</button>
+              <button onClick={onTechStackClick}>Skills</button>
             </li>
             <li>
-              <button onClick={onTechStackClick}>Skills</button>
+              <button onClick={onProjectClick}>Projects</button>
             </li>
             <li>
               <button onClick={onAboutClick}>About</button>
@@ -64,7 +65,7 @@ const Navbar = ({
         {/* Menu for large screens */}
         <ul className="menu menu-horizontal text-blue-400 font-bold px-1 hidden lg:flex">
           <li>
-            <button>Home</button>
+            <button onClick={onHeroSecClick}>Home</button>
           </li>
           <li>
             <button onClick={onEducationClick}>Educations</button>

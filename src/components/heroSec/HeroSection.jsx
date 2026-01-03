@@ -1,8 +1,11 @@
 import { FaDownload, FaPaperPlane } from "react-icons/fa";
 
-const HeroSection = ({ contactRef }) => {
+const HeroSection = ({ contactRef, heroSecRef }) => {
   return (
-    <section className="sm:py-20 py-10 w-full text-white  overflow-x-hidden">
+    <section
+      ref={heroSecRef}
+      className=" sm:py-20 py-10 w-full text-white  overflow-x-hidden"
+    >
       <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center relative z-10">
         {/* Text Content */}
         <div className="md:w-1/2 sm:mx-5 mb-12 md:mb-0">

@@ -23,9 +23,9 @@ const projects = [
 const Projects = ({ projectsRef }) => {
   return (
     <section
-      data-aos="zoom-in"
+      data-aos="zoom-out"
       ref={projectsRef}
-      className="mx-4 sm:mx-6  sm:my-56  md:mx-10 lg:mx-16 my-10 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
+      className="scroll-mt-7 mx-4 sm:mx-6  sm:my-56  md:mx-10 lg:mx-16 my-10 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-14">

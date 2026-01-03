@@ -5,7 +5,7 @@ const AboutSection = ({ aboutRef }) => {
     <section
       data-aos="zoom-in"
       ref={aboutRef}
-      className="mx-4 sm:mx-6   md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
+      className="scroll-mt-24 mx-4 sm:mx-6   md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >
       <div>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center text-gray-200 mb-10 sm:mb-12 md:mb-14">

@@ -40,7 +40,7 @@ const TechStack = ({ techStackRef }) => {
     <section
       ref={techStackRef}
       data-aos="fade-right"
-      className="mx-4 sm:mx-6  md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
+      className="scroll-mt-24 mx-4 sm:mx-6  md:mx-10 lg:mx-16 my-10 sm:my-12 p-6 sm:p-8 md:p-10 rounded-2xl border-2 border-white/25 bg-transparent backdrop-blur-3xl"
     >
       <div className="min-h-0">
         {/* Header */}

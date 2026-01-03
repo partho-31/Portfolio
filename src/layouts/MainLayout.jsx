@@ -8,6 +8,7 @@ import { motion, useScroll } from "framer-motion";
 import AnimatedCubeBackground from "../components/background/AnimatedCubBackground";
 
 const MainLayout = () => {
+  const heroSecRef = useRef(null)
   const aboutRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
@@ -23,11 +24,12 @@ const MainLayout = () => {
       <AnimatedCubeBackground />
 
       <Navbar
-        onContactClick={() => scrollToSection(contactRef)}
+        onHeroSecClick={()=>scrollToSection(heroSecRef)}
         onAboutClick={() => scrollToSection(aboutRef)}
         onEducationClick={() => scrollToSection(educationRef)}
-        onProjectClick={() => scrollToSection(projectsRef)}
         onTechStackClick={() => scrollToSection(techStackRef)}
+        onProjectClick={() => scrollToSection(projectsRef)}
+        onContactClick={() => scrollToSection(contactRef)}
       />
       <motion.div
         style={{
@@ -44,6 +46,7 @@ const MainLayout = () => {
       />
       <Outlet
         context={{
+          heroSecRef,
           aboutRef,
           educationRef,
           techStackRef,
