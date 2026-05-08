@@ -18,7 +18,7 @@ const HeroSection = ({ contactRef, heroSecRef }) => {
           <p className="text-gray-400 mb-8 text-lg max-w-lg">
             I craft clean, functional, and user-focused web experiences using
             modern technologies. As a passionate full stack developer, I bring
-            ideas to life with React.js/Next.js and Django REST — building
+            ideas to life with React.js/Next.js and Django REST/FastApi — building
             scalable solutions that are both elegant and practical.
           </p>
           <div className="flex flex-wrap justify-center sm:justify-start gap-4">
@@ -31,7 +31,7 @@ const HeroSection = ({ contactRef, heroSecRef }) => {
               <FaPaperPlane /> Contact Me
             </button>
             <a
-              href="https://drive.google.com/file/d/1pXsgK6f-IqAm1c1-vXIAeX9BhWtlRkT1/view?usp=sharing"
+              href="https://drive.google.com/file/d/1KVm-mzIo2-m4Nt0pQQBSsvYl5R1WKvXi/view?usp=sharing"
               target="_blank"
               className="flex items-center justify-center gap-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto"
             >

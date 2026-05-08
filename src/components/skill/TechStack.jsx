@@ -12,6 +12,7 @@ import {
   SiNextdotjs,
   SiRedux,
   SiZod,
+   SiMongodb, SiFastapi,SiShadcnui
 } from "react-icons/si";
 
 const techStack = [
@@ -21,10 +22,11 @@ const techStack = [
   { name: "Next.js", icon: <SiNextdotjs />, color: "text-white" },
   { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-cyan-500" },
   { name: "Redux", icon: <SiRedux />, color: "text-purple-500" },
-  { name: "Zod", icon: <SiZod />, color: "text-green-500" },
+  { name: "Shadcn", icon: <SiShadcnui />, color: "text-white" },
   { name: "Python", icon: <FaPython />, color: "text-yellow-500" },
-  { name: "Django", icon: <SiDjango />, color: "text-green-700" },
-  { name: "Django REST", icon: <FaPython />, color: "text-yellow-500" },
+  { name: "Django REST", icon: <SiDjango />, color: "text-green-700" },
+  { name: "FastApi", icon: <SiFastapi />, color: "text-teal-400" },
+  { name: "MongoDB", icon: <SiMongodb />, color: "text-green-700" },
   { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-700" },
   { name: "JWT Auth", icon: <SiJsonwebtokens />, color: "text-orange-500" },
   { name: "Swagger", icon: <SiSwagger />, color: "text-teal-600" },
@@ -32,7 +34,6 @@ const techStack = [
   { name: "Cloudinary", icon: <SiCloudinary />, color: "text-blue-400" },
   { name: "Git", icon: <FaGitAlt />, color: "text-red-500" },
   { name: "Vercel", icon: <SiVercel />, color: "text-white" },
-  { name: "Learning AWS", icon: <FaAws />, color: "text-orange-400" },
 ];
 
 const TechStack = ({ techStackRef }) => {

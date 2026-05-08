@@ -38,10 +38,10 @@ const AboutSection = ({ aboutRef }) => {
               </p>
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base">
                 I'm confident in backend development with Python, especially
-                Django and Django REST Framework. On the frontend, I work with
+                Django/FastApi. On the frontend, I work with
                 React.js/Next.js and Tailwind CSS to create clean and responsive
                 UI. I'm also experienced with JWT-based authentication, Swagger
-                API documentation, PostgreSQL database and tools like Supabase
+                API documentation, PostgreSQL/MongoDB databases and tools like Supabase
                 and Cloudinary.
               </p>
               <p className="text-gray-400 leading-relaxed text-sm sm:text-base">

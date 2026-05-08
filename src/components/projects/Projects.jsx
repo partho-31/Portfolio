@@ -3,12 +3,28 @@ import { Link } from "react-router";
 
 const projects = [
   {
+    title: "SOLARA – An e-commerce platform",
+    description:
+      "A modern fashion-focused e-commerce platform delivering stylish, high-quality shopping experience",
+    image:
+      "https://res.cloudinary.com/dvyz3blnz/image/upload/v1778226319/Screenshot_from_2026-05-08_13-31-47_t6eqno.png",
+    tech: ["NextJs","Typescript","Shadcn/ui", "FastApi", "MongoDB","Redux"],
+  },
+  {
+    title: "JNIAC_JUST – Content Management Platform",
+    description:
+      "A platform for the Jamal Nazrul Islam Astronomy Club to manage magazines, share astronomy articles and engage members.",
+    image:
+      "https://res.cloudinary.com/dinzf10l3/image/upload/q_auto/f_auto/v1775922487/Screenshot_from_2026-04-11_21-43-21_fgwoce.png",
+    tech: ["NextJs","Typescript","Shadcn/ui", "Django", "PostgreSQL","Redux"],
+  },
+  {
     title: "JerseyShop – E-commerce Platform",
     description:
       "An online store built using Django REST, React and PostgreSQL with full cart system, order management and secure email verification.",
     image:
       "https://res.cloudinary.com/dinzf10l3/image/upload/v1752836021/Golazo_home_qszfol.png",
-    tech: ["React", "Django", "PostgreSQL"],
+    tech: ["React", "Redux(RTK Query)" ,"Django", "PostgreSQL"],
   },
   {
     title: "EduPoint – Role-based Tutor Platform",
@@ -16,7 +32,7 @@ const projects = [
       "A tutoring platform with role-based login for students and tutors. Built with Django REST, React and PostgreSQL. Includes secure email verification.",
     image:
       "https://res.cloudinary.com/dinzf10l3/image/upload/v1752836544/Screenshot_9_oxjslr.png",
-    tech: ["React", "Django", "PostgreSQL"],
+    tech: ["React", "Django","REST API", "PostgreSQL"],
   },
 ];
 
@@ -32,19 +48,19 @@ const Projects = ({ projectsRef }) => {
           Featured <span className="text-blue-600">Projects</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-4">
           {projects.map((project, index) => (
             <Link to={`projects/${index + 1}`} key={index}>
               <div className="group border-2 border-white/25 rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-[3/3] sm:aspect-[2/1] overflow-hidden">
+                <div className=" overflow-hidden">
                   <img
                     src={project.image}
                     alt={project.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                 </div>
                 <div className="p-5 sm:p-6">
-                  <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3 text-blue-600">
+                  <h3 className="text-lg sm:text-xl line-clamp-2 font-semibold mb-2 sm:mb-3 text-blue-600">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4 leading-relaxed overflow-hidden line-clamp-2 text-sm sm:text-base">

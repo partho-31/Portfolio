@@ -59,7 +59,7 @@ const Nav = () => {
             </Link>
           </li>
           <a
-            href="https://drive.google.com/file/d/1pXsgK6f-IqAm1c1-vXIAeX9BhWtlRkT1/view?usp=sharing"
+            href="https://drive.google.com/file/d/1KVm-mzIo2-m4Nt0pQQBSsvYl5R1WKvXi/view?usp=sharing"
             target="_blank"
           >
             {" "}
