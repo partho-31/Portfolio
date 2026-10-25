@@ -12,7 +12,7 @@ import {
   SiNextdotjs,
   SiRedux,
   SiZod,
-   SiMongodb, SiFastapi,SiShadcnui
+   SiMongodb, SiFastapi,SiShadcnui, SiOpenai, SiLangchain
 } from "react-icons/si";
 
 const techStack = [
@@ -26,7 +26,7 @@ const techStack = [
   { name: "Python", icon: <FaPython />, color: "text-yellow-500" },
   { name: "Django REST", icon: <SiDjango />, color: "text-green-700" },
   { name: "FastApi", icon: <SiFastapi />, color: "text-teal-400" },
-  { name: "MongoDB", icon: <SiMongodb />, color: "text-green-700" },
+  { name: "LangChain", icon: <SiOpenai />, color: "text-green-600" },
   { name: "PostgreSQL", icon: <SiPostgresql />, color: "text-blue-700" },
   { name: "JWT Auth", icon: <SiJsonwebtokens />, color: "text-orange-500" },
   { name: "Swagger", icon: <SiSwagger />, color: "text-teal-600" },

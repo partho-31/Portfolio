@@ -31,7 +31,7 @@ const HeroSection = ({ contactRef, heroSecRef }) => {
               <FaPaperPlane /> Contact Me
             </button>
             <a
-              href="https://drive.google.com/file/d/1KVm-mzIo2-m4Nt0pQQBSsvYl5R1WKvXi/view?usp=sharing"
+              href="https://drive.google.com/file/d/1pc9mIxBdSs1piOtebjCMRBK_XwjuAzJc/view?usp=sharing"
               target="_blank"
               className="flex items-center justify-center gap-2 border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-4 sm:px-6 py-2 sm:py-3 rounded-lg transition-all shadow-lg hover:shadow-xl hover:-translate-y-1 w-full sm:w-auto"
             >

@@ -131,10 +131,10 @@ const Contact = ({ contactRef }) => {
             <FaEnvelope className="text-xl" />
             <div>
               <a
-                href="mailto:parthokumarmondal@gmail.com"
+                href="mailto:parthokumarmondal90@gmail.com"
                 className="font-semibold hover:underline"
               >
-                parthokumarmondal@gmail.com
+                parthokumarmondal90@gmail.com
               </a>
               <p>I usually respond within a day</p>
             </div>
@@ -152,7 +152,7 @@ const Contact = ({ contactRef }) => {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/partho-kumar-mondal-873525337/"
+              href="https://www.linkedin.com/in/partho-kumar31/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
